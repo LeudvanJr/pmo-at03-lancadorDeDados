@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="129dp"
+        android:text="@string/autor"
+        app:layout_constraintBottom_toTopOf="@+id/tvTipoDado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvRA"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/tvRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="151dp"
+        android:text="@string/ra"
+        app:layout_constraintBottom_toTopOf="@+id/spTiposDados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvAutor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spTiposDados"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="505dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRA" />
+
+    <TextView
+        android:id="@+id/tvTipoDado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipos_dado"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/spTiposDados"
+        app:layout_constraintStart_toStartOf="@+id/spTiposDados"
+        app:layout_constraintTop_toBottomOf="@+id/tvAutor" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLancar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQtdDado">
+
+        <RadioButton
+            android:id="@+id/rbUmDado"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/um_dado" />
+
+        <RadioButton
+            android:id="@+id/rbDoisDados"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dois_dados" />
+
+        <RadioButton
+            android:id="@+id/rbTresDados"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tres_dados" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvQtdDado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qtd_dado"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spTiposDados" />
+
+    <Button
+        android:id="@+id/btnLancar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="39dp"
+        android:text="@string/lancar"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultado"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="113dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnLancar"
+        app:layout_constraintTop_toBottomOf="@+id/btnLancar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

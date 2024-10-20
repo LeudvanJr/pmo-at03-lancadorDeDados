@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lançador de Dados</string>
+    <string name="autor">Leudvan Guedes</string>
+    <string name="ra">1110482313027</string>
+    <string name="tipos_dado">Tipos de Dados:</string>
+    <string name="qtd_dado">Quantidade de Dados:</string>
+    <string name="lancar">Lançar</string>
+    <string name="um_dado">Um Dado</string>
+    <string name="dois_dados">Dois Dado</string>
+    <string name="tres_dados">Três Dado</string>
+</resources>

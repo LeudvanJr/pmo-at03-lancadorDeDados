@@ -1,3 +1,7 @@
+/*
+ *@author: Leudvan Guedes
+ */
+
 package br.edu.fateczl.lancadordedados;
 
 import android.os.Bundle;
